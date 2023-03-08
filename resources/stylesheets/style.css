@@ -4,12 +4,11 @@
 html {
     text-rendering: optimizeLegibility;
     font-kerning: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-size: 70%;
     text-size-adjust: 100%;
     background: #f4f6f8;
-    overflow-y: scroll
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -18,17 +17,13 @@ html {
     }
 }
 
-@media (min-width: 750px) {
-    html {
-        background: #f4f6f8
-    }
+/* ---- COLORS ---- */
+.dark-blue {
+    color: #2B455E;
 }
 
-header {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+.blue {
+    color: rgb(107, 161, 215);
 }
 
 html,
@@ -143,66 +138,7 @@ select {
     vertical-align: middle
 }
 
-input[type=search]::-ms-clear {
-    display: none;
-    width: 0;
-    height: 0
-}
-
-input[type=search]::-ms-reveal {
-    display: none;
-    width: 0;
-    height: 0
-}
-
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-    display: none
-}
-
 /* ---- LARGURA DO ECRÃ ---- */
-.half,
-.third,
-.two-thirds,
-.fifth,
-.four-fifths {
-    float: left;
-    position: relative;
-    width: 100%
-}
-
-@media (min-width: 1200px) {
-    .half {
-        width: 50%
-    }
-}
-
-@media (min-width: 1200px) {
-    .third {
-        width: 33.333%
-    }
-}
-
-@media (min-width: 750px) {
-    .two-thirds {
-        width: 66.666%
-    }
-}
-
-@media (min-width: 750px) {
-    .fifth {
-        width: 15%
-    }
-}
-
-@media (min-width: 750px) {
-    .four-fifths {
-        width: 80%
-    }
-}
-
 .max-width {
     max-width: 1000px;
     width: 85%;
@@ -220,21 +156,7 @@ input[type=search]::-webkit-search-results-decoration {
     }
 }
 
-/* ---- CORES ---- */
-.light {
-    color: #ddd
-}
-
-.dark-blue {
-    color: #2B455E
-}
-
-.blue {
-    color: rgb(107, 161, 215);
-}
-
-/* ---- TIPOS DE LETRA ---- */
-
+/* ---- LETTERS ---- */
 body {
     line-height: 1;
     color: #27384B;
@@ -245,6 +167,19 @@ body {
     padding-top: 40px;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(107, 161, 215);
+    padding: 0.2rem 0;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.5S;
 }
 
 h1 {
@@ -262,7 +197,7 @@ h2 {
 h3 {
     font-size: 1.5rem;
     line-height: 32px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 h4 {
@@ -308,21 +243,9 @@ h6 {
 }
 
 span {
-    display: inline-block
+    display: inline-block;
 }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: rgb(107, 161, 215);
-    padding: 0.2rem 0;
-}
-
-a:hover {
-    text-decoration: none;
-    opacity: 0.8;
-    transition: 0.5S;
-}
 
 
 b {
@@ -602,7 +525,6 @@ button:hover {
     padding-top: 50px;
     text-align: justify;
 }
-
 
 /*-----------*/
 
