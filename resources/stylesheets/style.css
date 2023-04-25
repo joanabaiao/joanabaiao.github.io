@@ -516,6 +516,12 @@ button:hover {
     min-width: 55px;
 }
 
+.project-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
 /* ----- PROJECT ----- */
 
 .project-description {
