@@ -450,13 +450,13 @@ button:hover {
     justify-content: space-between;
     overflow: hidden;
     margin: 0 20px 40px;
-    min-height: 200px;
     background: white center center;
     background-size: cover;
     border-radius: 5px;
     transition: all 0.5s ease;
     border: 1px solid #ececec;
     padding: 20px;
+    min-height: 200px;
 }
 
 .project-box:hover {
@@ -527,16 +527,7 @@ button:hover {
     text-align: justify;
 }
 
-/* ----- EDUCATION ----- */
-
-.education-info {
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-}
+/* ----- TIMELINE ----- */
 
 .timeline-box {
     width: 100%;
@@ -588,6 +579,17 @@ button:hover {
     justify-content: flex-end; 
 }
 
+/* ----- EDUCATION ----- */
+
+.education-info {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .online-courses {
     padding-top: 40px;
     justify-content: center;
@@ -601,15 +603,13 @@ button:hover {
     width: 100%; /* Adjust the width of the divider line */
     height: 1px; /* Adjust the height of the divider line */
     background-color: #ccc;
-    margin-bottom: 30px; /* Spacing between the divider and the title */
+    margin-bottom: 40px; /* Spacing between the divider and the title */
 }
 
 .courses-info {
-    padding-top: 40px;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
     position: relative;
 }
 
@@ -633,29 +633,21 @@ button:hover {
     transition: all 0.3s ease;
 }
 
-.course-box p {
-    font-size: 1.3rem;
-    line-height: 20px;
-    font-weight: 400;
-}
-
-.course-box h3 {
-    line-height: 26px;
+.course-box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .course-box-head {
     padding-bottom: 10px;
 }
 
-.course-box-title {
-    display: flex;
-    justify-content: space-between;
-}
-
 .course-creators {
-    padding-top: 10px;
+    padding-top: 5px;
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .course-icons {
@@ -664,9 +656,7 @@ button:hover {
     padding-left: 10px;
 }
 
-
-
-/*-----------*/
+/* ---------------------- */
 .flex {
     display: flex
 }
