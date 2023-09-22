@@ -427,7 +427,7 @@ button:hover {
 }
 
 .img-about img {
-    margin-right: 30px;
+    margin: 30 0px;
     object-fit: cover;
     border-radius: 5px;
     width: 90%;
