@@ -294,12 +294,111 @@ footer {
 header {
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+header h4 {  
+    color: #2B455E;
+    text-align: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.nav-item h4 {
+    font-weight: 400;
+}
+
+.nav-item span {
+    color: rgb(107, 161, 215);
+    margin-left: 5px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #2B455E;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:1024px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 110px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        /*transition: 0.3s;*/
+        align-items: center; /* Add this line to center the items vertically */
+        justify-content: center; 
+    }
+
+    .nav-item {
+        margin: 12px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 0px;
+    }
+}
+
+/*
+
+header {
+    /*padding-top: 40px;
+    padding-bottom: 40px;
     z-index: 100;
     width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header h4 {  
@@ -314,9 +413,28 @@ header h4 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (min-width: 1200px) {
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    background-color: red;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+
+/*@media (min-width: 1200px) {
     .navbar {
         justify-content: space-between;
     }
@@ -359,6 +477,7 @@ header h4 {
     margin-left: 5px;
 }
 
+*/
 /* ----- MAIN -----*/
 
 .main-align-center {
@@ -537,22 +656,6 @@ button:hover {
     min-height: 100px;
 }
 
-.timeline-text {
-    min-height: 150px;
-}
-
-.timeline-text p {
-    font-size: 1.3rem;
-    line-height: 20px;
-    font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.timeline-text-right {
-    text-align: right;
-}
-
 .timeline-rounder {
     display: inline-block;
     width: 13px;
@@ -569,14 +672,52 @@ button:hover {
     transform: translate(6px, -7px);
 }
 
-.timeline-date {
-    display: flex; 
-    justify-content: flex-start;
+.timeline-content {
+    min-height: 150px;
+}
+
+.timeline-content p {
+    font-size: 1.3rem;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.timeline-content.align-right{
+    text-align: right;
+}
+
+.timeline-content.align-left{
+    text-align: left;
+}
+
+.timeline-details {
+    display: flex;
     align-items: center;
 }
 
-.timeline-date-right {
-    justify-content: flex-end; 
+.timeline-details.align-right {
+    justify-content: flex-end;
+}
+
+.timeline-details.timeline-content.align-left {
+    justify-content: flex-start;
+}
+
+.timeline-icon {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .timeline-details {
+        align-items: flex-start;; /* Align to the center on mobile screens */
+    }
+
+    .timeline-icon {
+        padding-top: 1px;
+    }
+
 }
 
 /* ----- EDUCATION ----- */
@@ -644,16 +785,15 @@ button:hover {
 }
 
 .course-creators {
-    padding-top: 5px;
+    text-align: left;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.course-icons {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
+.course-creators img {
+    margin-top: 5px; 
+    display: inline-block; 
 }
 
 /* ---------------------- */

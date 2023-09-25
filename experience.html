@@ -19,36 +19,49 @@
 </head>
 
 <body>
-    <header>
-        <div class='navbar'>
-            <a href='index.html'>
-                <h4>JOANA BAIÃO</h4>
-            </a>
-            <div class='nav'>
-                <a href='index.html'>
-                    <h4><span>01.</span> Home
-                    </h4>
-                </a>
-                <a href='about.html'>
-                    <h4><span>02.</span> About me
-                    </h4>
-                </a>
-                <a href='projects.html'>
-                    <h4><span>03.</span> Projects
-                    </h4>
-                </a>
-                <a href='education.html'>
-                    <h4><span>04.</span> Education
-                    </h4>
-                </a>
-                <a href='experience.html'>
-                    <h4><span>05.</span> Experience
-                    </h4>
-                </a>
-            </div>
-        </div>
-    </header>
 
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html">
+        <h4>JOANA BAIÃO</h4>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <h4><span>01.</span> Home</h4>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            <h4><span>02.</span> About me</h4>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">
+            <h4><span>03.</span> Projects</h4>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="education.html" class="nav-link">
+            <h4><span>04.</span> Education</h4>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="experience.html" class="nav-link">
+            <h4><span>05.</span> Experience</h4>
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <script src="resources/js/burger.js"></script>
+  
     <main class='max-width main-align-top'>
 
         <h1 class='blue'>EXPERIENCE</h1>
@@ -64,16 +77,16 @@
                     <span class="timeline-line"></span>
                 </div>
 
-                <div class="timeline-text">
+                <div class="timeline-content">
                     <h3>Data Scientist</h3>
                     <h4><a href="https://www.example.com">Bosch</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    <div class="timeline-date">
-                        <iconify-icon icon="ion:calendar-outline" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details">
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
                     </div>
-                    <div class="timeline-date">
-                        <iconify-icon icon="mdi:location" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details">
+                        <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Lisbon (Remote)</h5>
                     </div>
                 </div>
@@ -82,16 +95,17 @@
 
             <!-- EXPERIENCE 3 -->
             <div class="timeline-box">
-                <div class="timeline-text timeline-text-right">
+                <div class="timeline-content align-right">
                     <h3>Data Scientist</h3>
                     <h4><a href="https://www.example.com">CISUC</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    <div class="timeline-date timeline-date-right">
-                        <iconify-icon icon="ion:calendar-outline" class="pdr-5" width="15" height="15"></iconify-icon>
+                    
+                    <div class="timeline-details align-right">
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
                     </div>
-                    <div class="timeline-date timeline-date-right">
-                        <iconify-icon icon="mdi:location" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details align-right">
+                        <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Lisbon (Remote)</h5>
                     </div>
                 </div>
@@ -113,16 +127,16 @@
                     <span class="timeline-line"></span>
                 </div>
 
-                <div class="timeline-text">
+                <div class="timeline-content">
                     <h3>CEO</h3>
                     <h4><a href="https://www.example.com">jeKnowledge</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    <div class="timeline-date">
-                        <iconify-icon icon="ion:calendar-outline" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details">
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
                     </div>
-                    <div class="timeline-date">
-                        <iconify-icon icon="mdi:location" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details">
+                        <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Coimbra</h5>
                     </div>
                 </div>
@@ -131,16 +145,16 @@
             <!-- EXPERIENCE 1 -->
             <div class="timeline-box">
 
-                <div class="timeline-text timeline-text-right">
+                <div class="timeline-content align-right">
                     <h3>Research Fellow</h3>
                     <h4><a href="https://www.example.com">CFisUC</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    <div class="timeline-date timeline-date-right">
-                        <iconify-icon icon="ion:calendar-outline" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details align-right">
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
                     </div>
-                    <div class="timeline-date timeline-date-right">
-                        <iconify-icon icon="mdi:location" class="pdr-5" width="15" height="15"></iconify-icon>
+                    <div class="timeline-details align-right">
+                        <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Coimbra</h5>
                     </div>
                 </div>
