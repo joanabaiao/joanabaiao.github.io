@@ -20,11 +20,14 @@
 
 <body>
 
+
     <header>
-        <nav class="navbar">
-            <a href="index.html">
+        <nav class="navbar" id="mynavbar">
+
+            <a href="index.html" class="home">
                 <h4>JOANA BAIÃO</h4>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">
@@ -37,26 +40,27 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="projects.html" class="nav-link">
-                        <h4><span>03.</span> Projects</h4>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="education.html" class="nav-link">
-                        <h4><span>04.</span> Education</h4>
+                        <h4><span>03.</span> Education</h4>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="experience.html" class="nav-link">
-                        <h4><span>05.</span> Experience</h4>
+                        <h4><span>04.</span> Experience</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        <h4><span>05.</span> Projects</h4>
                     </a>
                 </li>
             </ul>
-            <div class="hamburger">
+
+            <a href="#" class="hamburger" id="hamburger-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </a>
         </nav>
     </header>
     <script src="resources/js/burger.js"></script>
@@ -67,17 +71,19 @@
 
         <div class="education-info">
 
-            <!-- EDUCATION 2 -->
+            <!-- EDUCATION 3: MASTERS -->
             <div class="timeline-box">
                 <div class="timeline-content align-right">
-                    <h3><a href="https://www.example.com">University of Coimbra</a></h3>
+                    <h3><a href="https://www.uc.pt/en">University of Coimbra</a></h3>
                     <h4>Master's degree in Clinical Informatics and Bioinformatics</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>The Master's Degree provided an in-depth understanding of medical informatics, bioinformatics,
+                        machine learning, statistics, and databases, extending beyond medical applications. This
+                        provided me adaptable skills applicable across diverse domains.
+                    </p>
                     <div class="timeline-details align-right">
-                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
-                        <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15"
+                            height="15"></iconify-icon>
+                        <h5 class="o-80 thinner">Sep. 2020 - Oct. 2022</h5>
                     </div>
                 </div>
                 <div>
@@ -87,7 +93,7 @@
                 <div></div>
             </div>
 
-            <!-- EDUCATION 1 -->
+            <!-- EDUCATION 2: TRAINING COURSE -->
             <div class="timeline-box">
                 <div></div>
                 <div>
@@ -96,29 +102,34 @@
                 </div>
 
                 <div class="timeline-content">
-                    <h3><a href="https://www.example.com">University of Coimbra</a></h3>
+                    <h3><a href="https://www.uc.pt/en">University of Coimbra</a></h3>
                     <h4>Training course in Computational Biology</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>During the 4-month <a href="https://apps.uc.pt/courses/EN/course/8643">Training Course in
+                            Computational Biology</a>, I explored the intersection of biology and computational science.
+                        The program provided a focused and hands-on learning experience in data analysis, programming,
+                        and algorithm development.
+                    </p>
                     <div class="timeline-details">
-                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
-                        <h5 class="o-80 thinner">Sep 2020 - Oct. 2020</h5>
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15"
+                            height="15"></iconify-icon>
+                        <h5 class="o-80 thinner">July 2020 - Oct. 2020</h5>
                     </div>
                 </div>
             </div>
 
-            <!-- EDUCATION 1 -->
+            <!-- EDUCATION 1: BACHELOR -->
             <div class="timeline-box">
 
                 <div class="timeline-content align-right">
-                    <h3><a href="https://www.example.com">University of Coimbra</a></h3>
+                    <h3><a href="https://www.uc.pt/en">University of Coimbra</a></h3>
                     <h4>Bachelor's degree in Biomedical Engineering</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>The <a href="https://apps.uc.pt/courses/EN/course/8921">Bachelor's Degree in Biomedical
+                            Engineering</a> provided me with a robust foundation in physics, mathematics, biomedical
+                        sciences, programming, and signals and systems. Through hands-on projects and practical
+                        training, I gained expertise in applying these skills to real-world challenges.
                     <div class="timeline-details align-right">
-                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
+                        <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15"
+                            height="15"></iconify-icon>
                         <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
                     </div>
                 </div>
@@ -162,13 +173,35 @@
                 <article class="course-box">
                     <div class="course-box-head">
                         <div class="course-box-title">
-                            <h4>Natural Language Processing with Classification and Vector Spaces</h4>
-                            <a href="https://www.example.com" class='' target='_blank'>
+                            <h4>Natural Language Processing with Probabilistic Models</h4>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/UB5VJG695ECN" class=''
+                                target='_blank'>
                                 <iconify-icon icon="fluent:certificate-24-regular" class="pdl-10" width="25"
                                     height="25"></iconify-icon>
                             </a>
                         </div>
-                        <h5 class="o-80 thinner">October, 2020</h5>
+                        <h5 class="o-80 thinner">November, 2023</h5>
+                    </div>
+                    <div class="course-creators">
+                        <img src="resources/images/education/deeplearningai-logo.png" alt="DeepLearning.AI Logo"
+                            class="pdr-10" style="height: 30px;">
+                        <img src="resources/images/education/coursera-logo.png" alt="Coursera Logo"
+                            style="height: 10px;">
+                    </div>
+                </article>
+
+                <article class="course-box">
+                    <div class="course-box-head">
+                        <div class="course-box-title">
+                            <h4>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+                            </h4>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/8VJEL2WYAS95" class=''
+                                target='_blank'>
+                                <iconify-icon icon="fluent:certificate-24-regular" class="pdl-10" width="25"
+                                    height="25"></iconify-icon>
+                            </a>
+                        </div>
+                        <h5 class="o-80 thinner">October, 2023</h5>
                     </div>
                     <div class="course-creators">
                         <img src="resources/images/education/deeplearningai-logo.png" alt="DeepLearning.AI Logo"
@@ -182,12 +215,13 @@
                     <div class="course-box-head">
                         <div class="course-box-title">
                             <h4>Natural Language Processing with Classification and Vector Spaces</h4>
-                            <a href="https://www.example.com" class='' target='_blank'>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/BKJ3E6L9FF53" class=''
+                                target='_blank'>
                                 <iconify-icon icon="fluent:certificate-24-regular" class="pdl-10" width="25"
                                     height="25"></iconify-icon>
                             </a>
                         </div>
-                        <h5 class="o-80 thinner">October, 2020</h5>
+                        <h5 class="o-80 thinner">September, 2023</h5>
                     </div>
                     <div class="course-creators">
                         <img src="resources/images/education/deeplearningai-logo.png" alt="DeepLearning.AI Logo"
@@ -200,32 +234,14 @@
                 <article class="course-box">
                     <div class="course-box-head">
                         <div class="course-box-title">
-                            <h4>Natural Language Processing with Classification and Vector Spaces</h4>
-                            <a href="https://www.example.com" class='' target='_blank'>
+                            <h4>Neural Networks and Deep Learning</h4>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/6XCWGFASS2YY" class=''
+                                target='_blank'>
                                 <iconify-icon icon="fluent:certificate-24-regular" class="pdl-10" width="25"
                                     height="25"></iconify-icon>
                             </a>
                         </div>
-                        <h5 class="o-80 thinner">October, 2020</h5>
-                    </div>
-                    <div class="course-creators">
-                        <img src="resources/images/education/deeplearningai-logo.png" alt="DeepLearning.AI Logo"
-                            class="pdr-10" style="height: 30px;">
-                        <img src="resources/images/education/coursera-logo.png" alt="Coursera Logo"
-                            style="height: 10px;">
-                    </div>
-                </article>
-
-                <article class="course-box">
-                    <div class="course-box-head">
-                        <div class="course-box-title">
-                            <h4>Natural Language Processing with Classification and Vector Spaces</h4>
-                            <a href="https://www.example.com" class='' target='_blank'>
-                                <iconify-icon icon="fluent:certificate-24-regular" class="pdl-10" width="25"
-                                    height="25"></iconify-icon>
-                            </a>
-                        </div>
-                        <h5 class="o-80 thinner">October, 2020</h5>
+                        <h5 class="o-80 thinner">September, 2023</h5>
                     </div>
                     <div class="course-creators">
                         <img src="resources/images/education/deeplearningai-logo.png" alt="DeepLearning.AI Logo"

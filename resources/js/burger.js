@@ -1,12 +1,10 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+function myFunction() {
+  var x = document.getElementById("mynavbar");
+  if (x.className === "navbar") {
+      x.className += " responsive";
+  } else {
+      x.className = "navbar";
+  }
+}
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-})
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}))
+document.getElementById("hamburger-button").addEventListener("click", myFunction);

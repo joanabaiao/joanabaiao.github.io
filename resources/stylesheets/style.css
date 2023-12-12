@@ -70,8 +70,8 @@ dl,
 dt,
 dd,
 ol,
-ul,
-li,
+/*ul,
+li,*/
 fieldset,
 form,
 label,
@@ -299,20 +299,25 @@ header {
     z-index: 100;
 }
 
-header h4 {  
+header h4 {
     color: #2B455E;
     text-align: center;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 30px;
 }
 
-.nav-menu{
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -328,6 +333,11 @@ header h4 {
     margin-left: 5px;
 }
 
+.navbar .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 .bar {
     display: block;
     width: 25px;
@@ -338,11 +348,76 @@ header h4 {
     background-color: #2B455E;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
+@media screen and (max-width: 1024px) {
+    .navbar {
+        display: block;
+        align-items: center;
+    }
+
+    .nav-menu {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .navbar a:not(.home) {
+        display: none;
+    }
+
+    .navbar a.hamburger {
+        float: right;
+        display: block;
+    }
 }
 
+@media screen and (max-width: 1024px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.responsive .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar.responsive .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar.responsive .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar.responsive .nav-menu a {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar.responsive .nav-item {
+        margin: 12px 0;
+    }
+
+}
+
+/*
 @media(max-width:1024px) {
     .hamburger {
         display: block;
@@ -368,9 +443,12 @@ header h4 {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        /*transition: 0.3s;*/
-        align-items: center; /* Add this line to center the items vertically */
+        transition: 0.3s;
+        align-items: center; 
         justify-content: center; 
+        background-color: red;
+        left: 0;
+
     }
 
     .nav-item {
@@ -380,104 +458,13 @@ header h4 {
     .nav-menu.active {
         left: 0;
         opacity: 1;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.9);
+        background-color: #92bae1;
         padding: 10px 0px;
     }
-}
 
-/*
+} */
 
-header {
-    /*padding-top: 40px;
-    padding-bottom: 40px;
-    z-index: 100;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-header h4 {  
-    color: #2B455E;
-    text-align: center;
-}
-
-.navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-    background-color: red;
-}
-
-.nav-menu li {
-    list-style: none;
-}
-
-
-/*@media (min-width: 1200px) {
-    .navbar {
-        justify-content: space-between;
-    }
-}
-
-.navbar a {
-    margin: 0 0.2rem
-}
-
-@media (min-width: 1200px) {
-    .navbar a {
-        margin: 0 0.8rem;
-        margin-bottom: 0;
-        margin-top: 0
-    }
-}
-
-.nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-@media (min-width: 1200px) {
-    .nav {
-        width: 80%;
-        justify-content: flex-end;
-    }
-}
-
-.nav h4 {
-    font-weight: 400;
-}
-
-.nav span {
-    color: rgb(107, 161, 215);
-    margin-left: 5px;
-}
-
-*/
 /* ----- MAIN -----*/
 
 .main-align-center {
@@ -495,7 +482,8 @@ header h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align content to the top of the container */
+    justify-content: flex-start;
+    /* Align content to the top of the container */
 }
 
 .home-buttons {
@@ -684,11 +672,26 @@ button:hover {
     padding-bottom: 10px;
 }
 
-.timeline-content.align-right{
+.timeline-content li {
+    font-size: 1.3rem;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+.timeline-content ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+.timeline-content.align-right {
     text-align: right;
 }
 
-.timeline-content.align-left{
+.timeline-content.align-left {
     text-align: left;
 }
 
@@ -711,7 +714,9 @@ button:hover {
 
 @media (max-width: 768px) {
     .timeline-details {
-        align-items: flex-start;; /* Align to the center on mobile screens */
+        align-items: flex-start;
+        ;
+        /* Align to the center on mobile screens */
     }
 
     .timeline-icon {
@@ -741,10 +746,13 @@ button:hover {
 }
 
 .divider {
-    width: 100%; /* Adjust the width of the divider line */
-    height: 1px; /* Adjust the height of the divider line */
+    width: 100%;
+    /* Adjust the width of the divider line */
+    height: 1px;
+    /* Adjust the height of the divider line */
     background-color: #ccc;
-    margin-bottom: 40px; /* Spacing between the divider and the title */
+    margin-bottom: 40px;
+    /* Spacing between the divider and the title */
 }
 
 .courses-info {
@@ -792,8 +800,8 @@ button:hover {
 }
 
 .course-creators img {
-    margin-top: 5px; 
-    display: inline-block; 
+    margin-top: 5px;
+    display: inline-block;
 }
 
 /* ---------------------- */
