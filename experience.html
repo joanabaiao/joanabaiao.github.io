@@ -1,211 +1,301 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="en" class="fvh">
-
-<head>
-  <title>Joana Baião</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Joana Baião">
-  <!--<meta name="description" content="">
+  <head>
+    <title>Joana Baião</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Joana Baião" />
+    <!--<meta name="description" content="">
         <meta name="keywords" content=""> -->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="resources/icons/icon.png" type="image/icon type">
-  <link rel="stylesheet" type="text/css" href="resources/stylesheets/style.css">
-  <link rel="shortcut icon" href="resources/icons/icon.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="resources/icons/icon.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources/stylesheets/style.css"
+    />
+    <link rel="shortcut icon" href="resources/icons/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav class="navbar" id="mynavbar">
+        <a href="index.html" class="home">
+          <h4>JOANA BAIÃO</h4>
+        </a>
 
-<body>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <h4><span>01.</span> Home</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <h4><span>02.</span> About me</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="education.html" class="nav-link">
+              <h4><span>03.</span> Education</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="experience.html" class="nav-link">
+              <h4><span>04.</span> Experience</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              <h4><span>05.</span> Projects</h4>
+            </a>
+          </li>
+        </ul>
 
+        <a href="#" class="hamburger" id="hamburger-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+      </nav>
+    </header>
+    <script src="resources/js/burger.js"></script>
 
+    <main class="max-width main-align-top">
+      <h1 class="blue">EXPERIENCE</h1>
 
-  <header>
-    <nav class="navbar" id="mynavbar">
+      <div class="education-info">
+        <!-- EXPERIENCE 4 -->
+        <div class="timeline-box">
+          <div></div>
 
-      <a href="index.html" class="home">
-        <h4>JOANA BAIÃO</h4>
-      </a>
-
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            <h4><span>01.</span> Home</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            <h4><span>02.</span> About me</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="education.html" class="nav-link">
-            <h4><span>03.</span> Education</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="experience.html" class="nav-link">
-            <h4><span>04.</span> Experience</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">
-            <h4><span>05.</span> Projects</h4>
-          </a>
-        </li>
-      </ul>
-
-      <a href="#" class="hamburger" id="hamburger-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-    </nav>
-  </header>
-  <script src="resources/js/burger.js"></script>
-
-  <main class='max-width main-align-top'>
-
-    <h1 class='blue'>EXPERIENCE</h1>
-
-    <div class="education-info">
-
-      <!-- EXPERIENCE 4 -->
-      <div class="timeline-box">
-        <div></div>
-
-        <div>
-          <span class="timeline-rounder"></span>
-          <span class="timeline-line"></span>
-        </div>
-
-        <div class="timeline-content">
-          <h3>Data Scientist</h3>
-          <h4><a href="https://www.bosch.com/">Bosch</a></h4>
-          <p>Developed machine learning models to predict employee turnover across five Bosch locations. Implemented the
-            models in Python using scikit-learn and Keras for algorithm development, and SHAP to provide interpretable
-            insights into predictions.</p>
-          <p>Applied time series forecasting for key HR metrics (headcount, average age and exit ratio) using SARIMA and
-            TES models. Incorporated these time series models into interactive Python visualisations using Power BI.</p>
-          <p>Automated data processing steps for the HR Data Science and Data Analytics teams.</p>
-          <p>Currently working on route optimisation to improve transport services for company employees. Using Google
-            OR-Tools for efficient route planning and Folium to create interactive visualisations.</p>
-          <div class="timeline-details">
-            <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Sep. 2017 - June 2020</h5>
+          <div>
+            <span class="timeline-rounder"></span>
+            <span class="timeline-line"></span>
           </div>
-          <div class="timeline-details">
-            <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Remote</h5>
+
+          <div class="timeline-content">
+            <h3>Data Scientist</h3>
+            <h4><a href="https://www.bosch.com/">Bosch</a></h4>
+            <p>
+              Currently working on a route optimisation project that aims to
+              ensure efficient transportation to the Stuttgart offices by
+              creating shuttle bus routes for more than 30k employees.
+            </p>
+            <p>
+              Developed prediction models to forecast employee turnover across
+              Bosch locations in Portugal. Implemented the models in Python
+              using scikit-learn and Keras for algorithm development.
+            </p>
+            <p>
+              Performed data mining on data from job boards, identifying key
+              skills for targeted positions and analysing skill similarities
+              across diverse roles, using NLP techniques and neural networks.
+            </p>
+            <p>
+              Applied time series forecasting techniques to analyse crucial HR
+              metrics such as headcount, average age, and exit ratio across all
+              Bosch locations globally. Integrated these dynamic models into
+              interactive Python visualisations in Power BI, providing
+              actionable insights for informed and strategic decision-making.
+            </p>
+            <p>
+              Automated multiple data processing and anonymization steps for HR
+              Data Analytics teams using Python, achieving a substantial 16-hour
+              reduction in manual workload per month.
+            </p>
+            <div class="timeline-details">
+              <iconify-icon
+                icon="ion:calendar-outline"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Feb. 2023 - Present</h5>
+            </div>
+            <div class="timeline-details">
+              <iconify-icon
+                icon="mdi:location"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Remote</h5>
+            </div>
           </div>
         </div>
 
-      </div>
+        <!-- EXPERIENCE 3 -->
+        <div class="timeline-box">
+          <div class="timeline-content align-right">
+            <h3>Data Scientist (Research Fellow)</h3>
+            <h4><a href="https://www.cisuc.uc.pt/en">CISUC</a></h4>
+            <p>
+              Developed a Machine Learning algorithm that predicts the course of
+              Multiple Sclerosis in a specific time window using real-world
+              clinical data. The pipeline was implemented in Python using the
+              Scikit Learn and Keras libraries. This study achieved a remarkable
+              +100% increase in F1-score compared to the base study,
+              demonstrating a significant advancement in disease course
+              prediction.
+            </p>
 
-      <!-- EXPERIENCE 3 -->
-      <div class="timeline-box">
-        <div class="timeline-content align-right">
-          <h3>Data Scientist</h3>
-          <h4><a href="https://www.cisuc.uc.pt/en">CISUC</a></h4>
-          <p>Developed a Machine Learning algorithm that can predict the course of multiple sclerosis in a specific time
-            window, considering results from a single visit and sequences of consecutive visits (time series). The
-            pipeline was implemented in Python using the Scikit Learn and Keras libraries.</p>
-          <p>Exploration of explainability methods to analyse the overall behaviour of the developed Machine Learning
-            models and specific predictions for particular patients.</p>
+            <p>
+              Explored explainability methods (SHAP, LIME and PDPs) to analyse
+              and clarify the underlying behaviour of the developed ML models,
+              providing valuable insights for improved interpretation by
+              clinicians and researchers.
+            </p>
 
-          <div class="timeline-details align-right">
-            <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Nov. 2020 - Oct. 2022</h5>
+            <div class="timeline-details align-right">
+              <iconify-icon
+                icon="ion:calendar-outline"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Nov. 2020 - Oct. 2022</h5>
+            </div>
+            <div class="timeline-details align-right">
+              <iconify-icon
+                icon="mdi:location"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Coimbra</h5>
+            </div>
           </div>
-          <div class="timeline-details align-right">
-            <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Coimbra</h5>
+
+          <div>
+            <span class="timeline-rounder"></span>
+            <span class="timeline-line"></span>
           </div>
+
+          <div></div>
         </div>
 
-        <div>
-          <span class="timeline-rounder"></span>
-          <span class="timeline-line"></span>
-        </div>
+        <!-- EXPERIENCE 2 -->
+        <div class="timeline-box">
+          <div></div>
+          <div>
+            <span class="timeline-rounder"></span>
+            <span class="timeline-line"></span>
+          </div>
 
-        <div></div>
-      </div>
-
-      <!-- EXPERIENCE 2 -->
-      <div class="timeline-box">
-
-        <div></div>
-        <div>
-          <span class="timeline-rounder"></span>
-          <span class="timeline-line"></span>
-        </div>
-
-        <div class="timeline-content">
-          <h3>Innovation Consultant and CEO</h3>
-          <h4><a href="https://jeknowledge.pt/">jeKnowledge (Junior Enterprise)</a></h4>
-          <p>Started my path as an Innovation Consultant, working on several tech events.
-            Progressed to the role of CEO, leading a cross-functional team with 55 students across 68 projects.</p>
-          <p>Increased internal and external growth and the quality of the work developed, with a 224.76% surge in
-            business volume, a 70.83% increase in projects, and a 6.83% rise in client feedback. </p>
-          <!--<p>Strategic innovator who ascended from an Innovation Consultant role to assume the position of CEO. Proven
+          <div class="timeline-content">
+            <h3>Innovation Consultant and CEO</h3>
+            <h4>
+              <a href="https://jeknowledge.pt/"
+                >jeKnowledge (Junior Enterprise)</a
+              >
+            </h4>
+            <p>
+              Started my path as an Innovation Consultant, working on several
+              tech events. Progressed to the role of CEO, leading a
+              cross-functional team with 55 students across 68 projects.
+            </p>
+            <p>
+              Increased internal and external growth and the quality of the work
+              developed, with a 224.76% surge in business volume, a 70.83%
+              increase in projects, and a 6.83% rise in client feedback.
+            </p>
+            <!--<p>Strategic innovator who ascended from an Innovation Consultant role to assume the position of CEO. Proven
             expertise in driving creative solutions and entrepreneurial initiatives. Skilled in leading cross-functional
             teams and optimizing business processes to deliver exceptional results. Adept at leveraging innovation to
             enhance organizational performance and achieve sustainable growth.</p>-->
-          <div class="timeline-details">
-            <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Apr. 2019 - May 2022</h5>
+            <div class="timeline-details">
+              <iconify-icon
+                icon="ion:calendar-outline"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Apr. 2019 - May 2022</h5>
+            </div>
+            <div class="timeline-details">
+              <iconify-icon
+                icon="mdi:location"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Coimbra</h5>
+            </div>
           </div>
-          <div class="timeline-details">
-            <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Coimbra</h5>
+        </div>
+
+        <!-- EXPERIENCE 1 -->
+        <div class="timeline-box">
+          <div class="timeline-content align-right">
+            <h3>Algorithm Developer (Research Fellow)</h3>
+            <h4><a href="https://cfisuc.fis.uc.pt/">CFisUC</a></h4>
+            <p>
+              Developed a Python algorithm designed to reconstruct 3D medical
+              images from 2D projections of vascular networks. This algorithm
+              autonomously computes crucial metrics from the generated 3D views,
+              including the number of vessels, their diameter, and the number of
+              bifurcations.
+            </p>
+            <div class="timeline-details align-right">
+              <iconify-icon
+                icon="ion:calendar-outline"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">July 2020 - Oct. 2020</h5>
+            </div>
+            <div class="timeline-details align-right">
+              <iconify-icon
+                icon="mdi:location"
+                class="timeline-icon"
+                width="15"
+                height="15"
+              ></iconify-icon>
+              <h5 class="o-80 thinner">Coimbra</h5>
+            </div>
           </div>
+
+          <div>
+            <span class="timeline-rounder"></span>
+            <!--<span class="timeline-line"></span>-->
+          </div>
+
+          <div></div>
         </div>
       </div>
-
-      <!-- EXPERIENCE 1 -->
-      <div class="timeline-box">
-
-        <div class="timeline-content align-right">
-          <h3>Research Fellow</h3>
-          <h4><a href="https://cfisuc.fis.uc.pt/">CFisUC</a></h4>
-          <p>Designed an algorithm using Python that automatically calculates the number of vessels, their diameter and
-            the number of bifurcations from 3D views of a vascular network.</p>
-          <div class="timeline-details align-right">
-            <iconify-icon icon="ion:calendar-outline" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">July 2020 - Oct. 2020</h5>
-          </div>
-          <div class="timeline-details align-right">
-            <iconify-icon icon="mdi:location" class="timeline-icon" width="15" height="15"></iconify-icon>
-            <h5 class="o-80 thinner">Coimbra</h5>
-          </div>
-        </div>
-
-        <div>
-          <span class="timeline-rounder"></span>
-          <!--<span class="timeline-line"></span>-->
-        </div>
-
-        <div></div>
+    </main>
+    <footer class="max-width">
+      <div class="site-footer">
+        <a
+          href="https://www.linkedin.com/in/joanasbvieira/"
+          class=""
+          target="_blank"
+        >
+          <iconify-icon
+            icon="mdi:linkedin"
+            width="35"
+            height="35"
+          ></iconify-icon>
+        </a>
+        <a href="https://github.com/joanabaiao" class="ml-40" target="_blank">
+          <iconify-icon icon="mdi:github" width="35" height="35"></iconify-icon>
+        </a>
+        <a href="mailto: joanabaiao99@gmail.com" class="ml-40" target="_blank">
+          <iconify-icon
+            icon="material-symbols:mail"
+            width="35"
+            height="35"
+          ></iconify-icon>
+        </a>
       </div>
-
-    </div>
-
-  </main>
-  <footer class='max-width'>
-    <div class='site-footer'>
-      <a href="https://www.linkedin.com/in/joanasbvieira/" class='' target='_blank'>
-        <iconify-icon icon="mdi:linkedin" width="35" height="35"></iconify-icon>
-      </a>
-      <a href="https://github.com/joanabaiao" class='ml-40' target='_blank'>
-        <iconify-icon icon="mdi:github" width="35" height="35"></iconify-icon>
-      </a>
-      <a href="mailto: joanabaiao99@gmail.com" class='ml-40' target='_blank'>
-        <iconify-icon icon="material-symbols:mail" width="35" height="35"></iconify-icon>
-      </a>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
