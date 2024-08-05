@@ -41,13 +41,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="education.html" class="nav-link">
-              <h4><span>03.</span> Education</h4>
+            <a href="experience.html" class="nav-link">
+              <h4><span>03.</span> Experience</h4>
             </a>
           </li>
           <li class="nav-item">
-            <a href="experience.html" class="nav-link">
-              <h4><span>04.</span> Experience</h4>
+            <a href="education.html" class="nav-link">
+              <h4><span>04.</span> Education</h4>
             </a>
           </li>
           <li class="nav-item">
@@ -150,9 +150,34 @@
         <article class="project-box">
           <div class="project-box-head">
             <div class="project-box-title">
-              <h3>Strava data integration pipeline with Airflow</h3>
+              <h3>Skin lesion segmentation and classification</h3>
+              <a href="https://github.com/joanabaiao/" class="" target="_blank">
+                <iconify-icon
+                  icon="tabler:brand-github"
+                  class="pdl-10"
+                  width="25"
+                  height="25"
+                ></iconify-icon>
+              </a>
+            </div>
+            <h5 class="o-80 thinner">Ongoing</h5>
+          </div>
+          <p>
+            This project focuses on analyzing skin lesions using the ISIC 2018
+            dataset. I am using U-Net for lesion segmentation and ResNet50 for
+            classifying lesions into different types.
+          </p>
+          <div class="project-languages">
+            <span>Python</span>
+          </div>
+        </article>
+
+        <article class="project-box">
+          <div class="project-box-head">
+            <div class="project-box-title">
+              <h3>Recipe recommendation system based on ingredients</h3>
               <a
-                href="https://github.com/joanabaiao/strava-data-pipeline"
+                href="https://github.com/joanabaiao/recipe-recommendation-system"
                 class=""
                 target="_blank"
               >
@@ -167,18 +192,50 @@
             <h5 class="o-80 thinner">Ongoing</h5>
           </div>
           <p>
+            I am developing a recipe recommendation system that uses NLP and web
+            scraping to suggest recipes based on provided ingredients. It
+            matches ingredients with recipes from various sources to simplify
+            meal planning and reduce food waste.
+          </p>
+          <div class="project-languages">
+            <span>Python</span>
+            <span>Web Scraping</span>
+            <span>NLP</span>
+            <span>Docker</span>
+          </div>
+        </article>
+
+        <article class="project-box">
+          <div class="project-box-head">
+            <div class="project-box-title">
+              <h3>Strava data integration pipeline with Airflow</h3>
+              <a
+                href="https://github.com/joanabaiao/strava-data-pipeline"
+                class=""
+                target="_blank"
+              >
+                <iconify-icon
+                  icon="tabler:brand-github"
+                  class="pdl-10"
+                  width="25"
+                  height="25"
+                ></iconify-icon>
+              </a>
+            </div>
+            <h5 class="o-80 thinner">July, 2024</h5>
+          </div>
+          <p>
             I created an automated ETL pipeline using Python to extract data
             from the Strava API, transform it, and load it into a PostgreSQL
-            database on a weekly schedule. The process is automated with Airflow
-            to ensure regular and efficient updated and the data is visualized
-            in a Tableau dashboard.
+            database on a weekly schedule. The process is automated with
+            Airflow, which runs in Docker containers, to ensure regular and
+            efficient updates.
           </p>
           <div class="project-languages">
             <span>Python</span>
             <span>PostgreSQL</span>
             <span>Airflow</span>
             <span>Docker</span>
-            <span>Tableau</span>
           </div>
         </article>
 
