@@ -537,8 +537,12 @@ button:hover {
     margin: 30 0px;
     object-fit: cover;
     border-radius: 5px;
-    width: 90%;
+    width: 85%;
     height: 90%;
+}
+
+.about-text p {
+    line-height: 40px;
 }
 
 /* ----- PROJECTS ----- */
